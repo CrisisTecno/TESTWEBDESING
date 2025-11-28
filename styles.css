@@ -1,0 +1,136 @@
+/* 
+tipografia extraida del figma para un mejor resultado 
+*/
+@font-face {
+  font-family: "FuenteFigma";
+  src: url("fonts/FoundersGrotesk-Regular.otf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 50px 20px 0px 20px;
+  box-sizing: border-box;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.cards-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  row-gap: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: 8px;
+  width: 47%;
+  box-sizing: border-box;
+}
+
+.marginEye {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: #4510c21a;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-secondary {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+colores, tipografia y tamaños sacados del figma 
+para lograr un diseño identico  
+*/
+
+.c-principal-xl {
+  color: #121185;
+  font-family: "FuenteFigma", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  font-size: 28px;
+}
+.c-secundary-l {
+  color: #353ab0;
+  font-size: 14px;
+  font-family: "FuenteFigma", sans-serif;
+}
+
+.c-principal-m {
+  color: #121185;
+  font-family: "FuenteFigma", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  font-size: 18px;
+}
+.c-secundary-s {
+  color: #4d4c9a;
+  font-family: "FuenteFigma", sans-serif;
+  margin: 0;
+  font-size: 12px;
+}
+/* 
+responsive para tablet no lo especificaba 
+en los requerimientos, mas aun asi para lograr un 
+resultado prolijo lo realizo
+*/
+
+@media (min-width: 768px) {
+  .c-principal-xl {
+    font-size: 30px;
+    text-align: center;
+  }
+  .c-secundary-l {
+    text-align: center;
+    font-size: 18px;
+  }
+  .card-container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-principal-xl {
+    font-size: 40px;
+    text-align: center;
+  }
+  .c-secundary-l {
+    width: 65%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .c-principal-m {
+    font-size: 20px;
+  }
+  .c-secundary-s {
+    font-size: 17px;
+  }
+  .cards-main-container {
+    gap: 90px;
+  }
+  .card-container {
+    width: 15%;
+  }
+  .marginEye {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  .eye-image {
+    width: 30px;
+    height: 30px;
+  }
+}
